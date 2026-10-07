@@ -1,0 +1,24 @@
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  num_grid_rows: 10
+  num_grid_cols: 10
+  train_ratio: 0.7
+  val_ratio: 0.15
+  test_ratio: 0.15
+
+prediction:
+  input_window: 12
+  output_window: 6
+  d_model: 64
+  num_heads: 4
+  num_layers: 2
+  dropout: 0.1
+  learning_rate: 0.0003
+  batch_size: 16
+  epochs: 20
+
+orchestration:
+  num_servers: 20
+  max_sfcs: 30
+  total_timesteps: 50000

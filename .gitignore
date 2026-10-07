@@ -1,0 +1,84 @@
+# =========================
+# Virtual Environments
+# =========================
+myenv/
+myenv*/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# =========================
+# Python Caches & Bytecode
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# =========================
+# Large Data Files & Tensors
+# =========================
+# Ignore downloaded raw telemetries & processed PyTorch tensors
+data/raw/
+data/processed/
+*.csv
+*.pt
+*.pkl
+*.npy
+*.npz
+
+# Keep the data folder structure tracked in git
+!data/__init__.py
+!data/download_data.py
+!data/preprocess.py
+
+# =========================
+# Model Checkpoints (Heavy Binaries)
+# =========================
+checkpoints/
+*.pth
+*.zip
+*.bin
+
+# =========================
+# Logs, Tensorboard & Outputs
+# =========================
+logs/
+*.log
+events.out.tfevents.*
+
+# (Optional) Keep generated evaluation plots in git for README rendering
+# If you want to commit your result plots, uncomment the line below:
+# !results/*.png
+
+# =========================
+# IDEs & Editor Configs
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
